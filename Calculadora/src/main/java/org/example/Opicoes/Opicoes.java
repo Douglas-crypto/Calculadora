@@ -1,6 +1,6 @@
 package org.example.Opicoes;
 
-public enum Opicoes {
+public enum Opcoes {
     SOMA("+"),
     SUBTRACAO("-"),
     DIVISAO("/"),
