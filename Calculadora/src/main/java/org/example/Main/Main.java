@@ -1,11 +1,10 @@
-
 package org.example.Main;
 
 import org.example.Operacoes.Adicao;
 import org.example.Operacoes.Divisao;
 import org.example.Operacoes.Multiplicacao;
 import org.example.Operacoes.Subtracao;
-import org.example.Opicoes.Opicoes;
+import org.example.Opcoes.Opcoes;
 
 import java.util.Scanner;
 
@@ -18,7 +17,7 @@ public class Main {
 
         try {
 
-            Opicoes operacaoEscolhida = Opicoes.fromSimbolo(escolha);
+            Opcoes operacaoEscolhida = Opcoes.fromSimbolo(escolha);
 
             System.out.print("Digite o primeiro número: ");
             double a = scanner.nextDouble();
@@ -55,4 +54,3 @@ public class Main {
             scanner.close();
         }
     }
-}
