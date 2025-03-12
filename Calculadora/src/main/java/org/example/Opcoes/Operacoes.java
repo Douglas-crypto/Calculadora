@@ -25,5 +25,3 @@ public enum Operacoes {
         throw new IllegalArgumentException("Operação inválida: " + simbolo);
     }
 }
-
-
