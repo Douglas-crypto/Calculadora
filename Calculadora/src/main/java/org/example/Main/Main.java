@@ -1,10 +1,11 @@
+
 package org.example.Main;
 
-import org.example.Opcoes.Operacoes;
-import org.example.Operaces.Adicao;
-import org.example.Operaces.Divisao;
-import org.example.Operaces.Multiplicacao;
-import org.example.Operaces.Subtracao;
+import org.example.Operacoes.Adicao;
+import org.example.Operacoes.Divisao;
+import org.example.Operacoes.Multiplicacao;
+import org.example.Operacoes.Subtracao;
+import org.example.Opicoes.Opicoes;
 
 import java.util.Scanner;
 
@@ -13,16 +14,11 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Escolha uma operação (+, -, /, *):");
-        for (Operacoes operacao : Operacoes.values()) {
-            System.out.println(operacao.getSimbolo() + "  " + operacao.name());
-        }
-
         String escolha = scanner.nextLine();
 
-        Operacoes operacaoEscolhida;
         try {
-            operacaoEscolhida = Operacoes.fromSimbolo(escolha);
-            System.out.println("Você escolheu: " + operacaoEscolhida);
+
+            Opicoes operacaoEscolhida = Opicoes.fromSimbolo(escolha);
 
             System.out.print("Digite o primeiro número: ");
             double a = scanner.nextDouble();
